@@ -1,0 +1,74 @@
+﻿@model BankManagement.DTO.BankDetail
+
+@{
+    ViewData["Title"] = "GetBankDetail";
+}
+
+<h2>GetBankDetail</h2>
+
+<div>
+    <h4>BankDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <table border="1" align="center" style="text-align:center;">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.AccountNumber)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AccountType)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CustomerName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NomieeName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CustomerAddress)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CustomerEmail)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CustomerPhoneNumber)
+                </th>
+            </tr>
+
+
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => model.AccountNumber)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(model => model.AccountType)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(model => model.CustomerName)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(model => model.NomieeName)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(model => model.CustomerAddress)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(model => model.CustomerEmail)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(model => model.CustomerPhoneNumber)
+                </td>
+            </tr>
+        </table>
+</dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>

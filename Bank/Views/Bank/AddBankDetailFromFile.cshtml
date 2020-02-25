@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "AddBankDetailFromFile";
+}
+
+<h2>AddBankDetailFromFile</h2>
+
+<h3>@TempData["Messsage"]</h3>
+<form asp-action="AddBankFromFile" enctype="multipart/form-data">
+
+    UploadFile<input type="file" name="Excelfile" />
+    <div class="form-group">
+        <input type="submit" value="AddExcelFile" class="btn btn-default" />
+        @*<input asp-page-handler="Upload" class="btn" type="submit" value="Upload" />*@
+    </div>
+</form>
